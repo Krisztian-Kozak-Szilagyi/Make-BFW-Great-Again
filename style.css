@@ -1,0 +1,84 @@
+body {
+  margin: 12px 0 0 0;
+  background-color: #1B3C53;
+}
+
+header {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #D2C1B6;
+  font-family: "Noto Sans JP", serif;
+  color: #D2C1B6;
+  padding: 0 20px;
+}
+header ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0 auto;
+}
+header ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+header ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+section {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #D2C1B6;
+  font-family: "Noto Sans JP", serif;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section form label {
+  text-align: left;
+}
+section form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #D2C1B6;
+  caret-color: #D2C1B6;
+  color: #D2C1B6;
+  font-family: "Raleway", sans-serif;
+}
+section form input::-moz-placeholder {
+  color: #D2C1B6;
+  font-family: "Raleway", sans-serif;
+}
+section form input::placeholder {
+  color: #D2C1B6;
+  font-family: "Raleway", sans-serif;
+}
+section form input:focus {
+  outline: none;
+}
+section form button {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #1B3C53;
+  font-family: "Noto Sans JP", serif;
+  background-color: #F9F3EF;
+}
+section form button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}/*# sourceMappingURL=style.css.map */

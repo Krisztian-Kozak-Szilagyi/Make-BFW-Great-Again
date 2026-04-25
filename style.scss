@@ -1,0 +1,83 @@
+$main-bg-color: #1B3C53;
+$main-text-color: #D2C1B6;
+$secondary-text-color: #F9F3EF;
+$main-font: "Noto Sans JP", serif;
+$secondary-font: "Raleway", sans-serif;
+
+@mixin flex-box {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    color: $main-text-color;
+    font-family: $main-font;
+}
+
+body {
+    margin: 12px 0 0 0;
+    background-color: $main-bg-color;
+}
+
+header {
+    @include flex-box;
+    color: $main-text-color;
+    padding: 0 20px;
+    ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+    ul li a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul li a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+section {
+    @include flex-box;
+    flex-direction: column;
+    margin-top: 6rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        label {
+            text-align: left;
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $main-text-color;
+            caret-color: $main-text-color;
+            color: $main-text-color;
+            font-family: $secondary-font;
+        }
+        input::placeholder {
+            color: $main-text-color;
+            font-family: $secondary-font;
+        }
+        input:focus {
+            outline: none;
+        }
+        button {
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: $main-bg-color;
+            font-family: $main-font;
+            background-color: $secondary-text-color;
+        }
+        button:hover {
+            cursor: pointer;
+            filter: brightness(0.9);
+        }
+    }
+}
