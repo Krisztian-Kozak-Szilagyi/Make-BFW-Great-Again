@@ -74,11 +74,3 @@ form.addEventListener("submit", function (e) {
     ? `Deine Note: ${result.grade}`
     : "Keine gültige Note gefunden";
 });
-
-// if (userIP == dataBaseIP) {
-//     geoLocation = setInterval;
-// } else banSerial;
-
-// getElementById("geoLocation");
-// const noIDEA = youWonderingWhatthisLastFewLinesOfCodeDoes,DontYa;
-// const needLine = 10;
