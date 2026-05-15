@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 const input = document.getElementById("gradeInput");
 const output = document.getElementById("gradeOutput");
 
+// Putting all the possible options into a single array
 const grades = [
   { min: 100, max: 100, grade: "1" },
   { min: 98, max: 99.5, grade: "1,1" },
