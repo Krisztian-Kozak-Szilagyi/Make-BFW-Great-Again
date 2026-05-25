@@ -56,6 +56,7 @@ const grades = [
   { min: 0, max: 4.5, grade: "6" }
 ];
 
+// placeholder
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
