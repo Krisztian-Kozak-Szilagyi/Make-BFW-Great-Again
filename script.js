@@ -69,7 +69,7 @@ form.addEventListener("submit", function (e) {
   const result = grades.find(
     g => points >= g.min && points <= g.max
   );
-
+// 
   output.textContent = result
     ? `Deine Note: ${result.grade}`
     : "Keine gültige Note gefunden";
